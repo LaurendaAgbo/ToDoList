@@ -1,0 +1,184 @@
+/*****   DEBUT  MAIN     STYLE       *****/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+	height: 100%;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+	height: 100%;
+	font-size: 1rem;
+	/* background: url(images/list-mission.jpg) center no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	width: 100%;
+	height: 100%; */
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+
+/*****     FIN    MAIN     STYLE       *****/
+
+/*****   DEBUT  WELCOME SECTION       *****/
+
+div.d-flex.align-items-center {
+	height: 100%;
+}
+
+h3#enter {
+	color: #000;
+    text-shadow: 0px 0px 1px #080e0e;
+    font-weight: 400;
+    font-family: 'Roboto Slab', serif;
+	font-size: 2rem;
+}
+
+#loginForm {
+	height: 100%;
+}
+
+#loginForm form {
+	position: relative;
+}
+
+#loginForm input[type=text] {
+    height: 50px;
+    font-family: "Raleway", sans-serif;
+    letter-spacing: 0.04em;
+    border-radius: 2px;
+}
+
+#loginForm .form-control:focus,
+#taskForm .form-control:focus {
+    border-color: #ced4da;
+    box-shadow: none;
+}
+
+#loginForm .input-group-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#loginForm .btn.btn-primary {
+    border-radius: 2px;
+    height: 50px;
+    font-family: 'Roboto Slab', serif;
+    font-weight: 700;
+    font-size: 0.87rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0 2rem;
+}
+
+#loginForm .btn.btn-primary::before {
+    content: "\f007";
+	font-family: fontawesome;
+	margin-right: 12.5px;
+}
+
+#loginForm .btn.btn-primary:hover {
+    background: #34495e;
+	border-color: #34495e;
+}
+
+/*****     FIN    WELCOME SECTION       *****/
+
+/*****     DEBUT    TASK LIST SECTION       *****/
+
+h2#showName {
+	font-size: 2rem;
+    font-weight: 300;
+    line-height: 2.5;
+}
+
+#taskForm button {
+    border-radius: 2px;
+    /* height: 50px; */
+    font-family: 'Roboto Slab', serif;
+    font-weight: 400;
+    font-size: 0.87rem;
+    letter-spacing: 0.1em;
+    padding: 1rem;
+}
+
+#taskForm #addTask::before {
+    content: "\f067";
+	font-family: fontawesome;
+	margin-right: 0.5rem;
+}
+
+#taskForm #taskMask::before {
+    content: "\f068";
+	font-family: fontawesome;
+	margin-right: 0.5rem;
+}
+
+#taskForm #lateTaskMask::before {
+    content: "\f146";
+	font-family: fontawesome;
+	margin-right: 0.5rem;
+}
+
+.box-body {
+    background: #f4f4f459;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-top: 2px solid #00c0ef;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.checkIt {
+}
+
+.selectedTask {
+	display: inline-block;
+    width: 50%;
+    border-right: 2px solid #fff;
+	padding: 0 0.3rem;
+}
+
+.selectedDeadline {
+	padding: 0 1rem;
+}
+
+#taskList>li {
+    padding: 10px;
+    border-bottom: 2px solid #fff;
+}
+
+#taskList>li .tools {
+    display: none;
+    float: right;
+    color: #dd4b39;
+}
+
+#taskList>li:hover .tools{
+    display: block;  
+}
+
+.tools .fa-edit {
+	padding: 0 0.5rem;
+}
+
+.tools .close {
+	padding: 0.2rem 0;
+}
+
+/*****     FIN    TASK LIST SECTION       *****/
