@@ -186,9 +186,9 @@ $(function () {
 		// If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
 		// Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
 		var modal = $(this);
-		modal.find('.modal-title').text('Editing of ' + recipient.split('/')[0])
-		modal.find('.modal-body input[type="text"]').val(recipient.split('/')[0])
-		modal.find('.modal-body input[type="date"]').val(recipient.split('/')[1])
+		modal.find('.modal-title').text('Editing of ' + recipient.split('/')[0]);
+		modal.find('.modal-body input[type="text"]').val(recipient.split('/')[0]);
+		modal.find('.modal-body input[type="date"]').val(recipient.split('/')[1]);
 		
 		editIndice = parseInt(button.attr('class').split(' ')[2].split('-')[1]);
 		console.log(button.attr('class').split(' ')[2].split('-')[1]);
